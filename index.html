@@ -116,8 +116,16 @@
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
+  }
+
+  @media (max-width: 900px) {
+    .grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  @media (max-width: 600px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
   }
 
   .empty {
@@ -328,8 +336,26 @@
   // The image file must be uploaded to this same repo folder.
   // ---------------------------------------------------------------
   const covers = [
+    { file: "ailia_cover.png", title: "Ailia" },
+    { file: "angeline_coverfinal.png", title: "Angeline" },
+    { file: "Bluerevolver_cover.png", title: "Blue Revolver" },
+    { file: "bombun_cover.png", title: "Bombun" },
     { file: "boomerangfu_cover.png", title: "Boomerang Fu" },
+    { file: "classof09_cover.png", title: "Class of '09" },
+    { file: "exzodia_coverfinal.png", title: "Exzodia" },
     { file: "motorslicecoverfinal.png", title: "Motorslice" },
+    { file: "Olliolliworld_cover.png", title: "OlliOlli World" },
+    { file: "parkinggarage_cover.png", title: "Parking Garage" },
+    { file: "pixeljunk_cover.png", title: "Pixeljunk" },
+    { file: "pseudoregalia_Cover.png", title: "Pseudoregalia" },
+    { file: "Rift_Cover.png", title: "Rift" },
+    { file: "samuraijack_cover.png", title: "Samurai Jack" },
+    { file: "stickfight_final.png", title: "Stick Fight" },
+    { file: "streetunix_kazeta.png", title: "Streetunix" },
+    { file: "swordofthesea_cover.png", title: "Sword of the Sea" },
+    { file: "TonyHawk_cover.png", title: "Tony Hawk" },
+    { file: "vane_cover.png", title: "Vane" },
+    { file: "Vividlope_Cover.png", title: "Vividlope" },
   ];
 
   const grid = document.getElementById('grid');
